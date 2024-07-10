@@ -1,0 +1,103 @@
+.store{
+    text-align: center;
+    font-size: 2.5rem;
+    color:rgb(202, 129, 40)
+}
+.address{
+text-align: center;
+color:#c19A6B;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+ th{
+  font-weight: bold;
+ }
+  th, td {
+    border: 3px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  /* Adjust input width for small screens */
+  input[type="text"], input[type="number"] {
+    width: 100%;
+  }
+
+.name{
+  font-weight: bold;
+}
+.no{
+  font-weight: bold;
+}
+.total {
+  font-weight: bold;
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+.pieces{
+font-weight: bold;
+  text-align: left;
+}
+.add{
+background-color: rgb(63, 200, 63);
+color: white;
+padding: 5px;
+border-radius: 3px;
+cursor: pointer;
+border: none;
+}
+.add:hover{
+  background-color: rgb(7, 140, 7);
+}
+.remove{
+background-color: rgb(243, 86, 86);
+color:white;
+padding: 5px;
+border-radius: 3px;
+cursor: pointer;
+border: none;
+}
+.remove:hover{
+ background-color: red;
+}
+.btn{
+  display: block;
+  margin: 0 40%;
+}
+.reset{
+  margin-top: 10px;
+  background-color: rgb(245, 100, 100);
+  font-size: 1rem;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+.reset:hover{
+ background-color: rgb(213, 37, 37);
+}
+.submit{
+  margin-top: 10px;
+  font-size: 1rem;
+  background-color: rgb(12, 142, 242);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.submit:hover{
+  background-color: rgb(24, 93, 197);
+}
+.input{
+  border: none;
+  font-weight: bold;
+  display: inline; 
+}

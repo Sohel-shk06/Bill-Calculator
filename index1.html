@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>Input Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"  >
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+ <div class="outer-box">
+   <div class="inner-class">
+    <header id="head" class="head">
+     <h1>sign up</h1>
+    </header>
+    <main class="body">
+     <form id="inputForm">
+        <p> <label for="sname">Enter store name:</label><br> 
+         <input type="text" id="sname" required></p>
+        <p><label for="address">Enter your store address :</label><br>
+         <input type="text" id="address" required> </p>
+         <p> <label for="name">Enter your name:</label> <br>
+          <input type="text" id="name" required></p>
+         <p><label for="no">Enter your mobile number :</label><br>
+          <input type="tel" id="no" required></p>
+          
+
+        <p><input class="submit" type="submit"></p>
+      </form>
+    </main>
+   </div>
+     <div class="circle c1"></div>
+     <div class="circle c2"></div>
+ </div>
+    <script>
+        document.getElementById('inputForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const SName = document.getElementById('sname').value;
+            localStorage.setItem('sname', SName);
+            const address = document.getElementById('address').value;
+            localStorage.setItem('address',address);
+            const Name = document.getElementById('name').value;
+            localStorage.setItem('name', Name);
+            const no = document.getElementById('no').value;
+            localStorage.setItem('no',no);
+            
+            
+            window.location.href = 'index2.html';
+        });
+    </script>
+</body>
+</html>

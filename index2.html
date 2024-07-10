@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   
+    <h1 class="store" id="osname"></h1>
+    <h2 class="address" id="oaddress"></h2>
+    <span class="name" id="oname"></span><span>:</span>
+    <span class="no" id="ono"></span>
+    
+    <table>
+        <tr>
+            <th>
+                <label>Customer Name:</label>
+               <input class="input" type="name" placeholder="Customer name">
+            </th>
+            <th>
+                <label for=""> No: </label>
+                <input class="input" type="tel" placeholder="+91"> 
+            </th>
+        </tr>
+    </table>    
+<table border="2">
+    
+        
+        <tr>
+            <th>No.</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Rate</th>
+            <th>Amount</th>
+        </tr>
+    
+    <tbody id="table_field">
+       
+        <!-- Rows will be dynamically added here -->
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                <div class="pieces">Total Quntity: <span id="overall_pieces">0</span></div>
+            </td>
+            <td colspan="2">
+                <div class="total">Total Amount: <span id="overall_total">0</span></div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<div id="para">
+ <button class="add" id="add">Add Row</button>
+ <button class="remove" id="remove">Remove Row</button><br><br>
+  <div class="btn">
+ <button class="reset" id="reset">Reset</button> <!-- Reset button -->
+ <input class="submit" id="btn" onclick="hide()" type="submit">
+  </div>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>

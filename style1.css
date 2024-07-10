@@ -1,0 +1,89 @@
+*{
+    margin :0;
+    padding :0;
+   box-sizing: border-box;
+}
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top ,rgb(108, 193, 236),rgb(215, 235, 248));
+    
+}
+
+
+.inner-class{
+    width: 360px;
+    background-color: rgb(227, 255, 127);
+    margin: 0 auto;
+    position: relative;
+    top: 30%;  
+    transform: translatey(-30%);
+    padding: 30px 50px;
+    background-color: azure;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px blue;
+    z-index: 2;
+}
+
+.head{
+font-size: 2rem;
+text-align: center;
+
+}
+.body{
+    margin: 20px 0;
+}
+.body p{
+    margin: 10px 0;
+}
+.body p label{
+    font: 1em sans-serif;
+    font-weight: bold;
+    display: block;
+}
+.body p input{
+    width: 100%;
+    
+    padding: 10px;
+    border: 2px solid rgb(29, 24, 24);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.submit{
+    margin-top: 10px;
+    background-color: rgb(44, 44, 230);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(5, 5, 134);
+}
+.circle{
+    width: 200px;
+    height:200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right,rgb(186, 219, 236),white);
+    
+    position: absolute;
+}
+.c1{
+    top:100px;
+    left:40px;
+}
+.c2{
+    bottom: 200px;
+    right: 50px;
+}
+@media (max-width:600px) {
+    .outer-box{
+        min-width: 280px;
+    }
+
+    .body p input{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    
+
+}
