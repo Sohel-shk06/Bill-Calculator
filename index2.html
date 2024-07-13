@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Output Page</title>
+    <meta charset="utf-8">
+    <title>Input Page</title>
     <link rel="stylesheet" href="style2.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"  >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-   
+
     <h1 class="store" id="osname"></h1>
     <h2 class="address" id="oaddress"></h2>
     <span class="name" id="oname"></span><span>:</span>
     <span class="no" id="ono"></span>
-    
-    <table>
-       
-    </table>    
-<table border="2">
-    
-      <tr>
-        <th colspan="3">
-            <label>Customer Name:</label>
-           <input class="input" type="name" placeholder="Customer name">
-        </th>
-        <th colspan="2">
-            <label for=""> No: </label>
-            <input class="input" type="tel" placeholder="+91"> 
-        </th>
-      </tr>
-        <tr>
-            <th>No.</th>
-            <th>Product Name</th>
-            <th>Quantity</th>
-            <th>Rate</th>
-            <th>Amount</th>
-        </tr>
-    
-    <tbody id="table_field">
-       
-        <!-- Rows will be dynamically added here -->
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3">
-                <div class="pieces">Total Quntity: <span id="overall_pieces">0</span></div>
-            </td>
-            <td colspan="2">
-                <div class="total">Total Amount: <span id="overall_total">0</span></div>
-            </td>
-        </tr>
-    </tfoot>
-</table>
-<div id="para">
- <button class="add" id="add">Add Row</button>
- <button class="remove" id="remove">Remove Row</button><br><br>
-  <div class="btn">
- <button class="reset" id="reset">Reset</button> <!-- Reset button -->
- <input class="submit" id="btn" onclick="hide()" type="submit">
-  </div>
-</div>
 
-<script src="script2.js"></script>
-</body>
+    <form id="itemForm" action="output.html" method="get">
+        <table border="2">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        <label for="cuname">Customer name: </label>
+                        <input type="text" id="cuname" required>
+                    </th>
+                    <th colspan="2">
+                        <label for="cuno">Customer mobile no. : </label>
+                        <input type="tel" id="cuno" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th>No.</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Ammount</th>
+                </tr>
+            </thead>
+            <tbody id="table_field">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <div class="pieces">Total Quantity: <span id="overall_pieces">0</span></div>
+                    </td>
+                    <td colspan="2">
+                        <div class="total">Total Ammount: <span id="overall_total">0</span></div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button type="button" id="add" class="add">Add Row</button>
+        <button type="button" class="remove" id="remove">Remove Row</button><br>
+        <button type="submit" class="submit btn">Submit</button>
+    </form>
+
+    <script src="script2.js"></script>
+    </body>
 </html>
+
